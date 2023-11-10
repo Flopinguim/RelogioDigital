@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cute+Font&family=Inter&family=Poppins:wght@100&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(120deg , #7e39ff, #006eff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 8px 20px rgb(0, 0, .5);
+}
+
+.relogio div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(5, 5, 5, .9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3;
+}
+
+.relogio span {
+    font-size: 70px;
+}
+
+.relogio span.tempo {
+    font-size: 25px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.social {
+    margin-bottom: 20px;
+}
+
+.social i {
+    font-size: 28px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+}
+
+.line { 
+    background: white;
+    width: 20px;
+    height: 6px;
+    margin-top: 2px;
+    border-radius: 40px;
+    position: relative;
+    animation: underlineAnimation 1.5s linear infinite;
+}
+
+@keyframes underlineAnimation {
+    0%{
+        left: -80px;
+        opacity: 0;
+    }   
+    50%{
+        opacity: 1;
+    }
+    100%{
+        left: 80px;
+        opacity: 0;
+    }
+}
